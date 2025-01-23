@@ -1,8 +1,7 @@
-function slugify(title) {
-  return title.toLowerCase().split(' ').join('-');
+function isEnoughCapacity(products, containerSize) {
+  const products = [
+    {product, quantity}
+  ];
+  const totalProducts = Object.values(products).reduce((sum, quantity) => sum += quantity, 0)
 }
-
-console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
-console.log(slugify("English for developer")); // "english-for-developer"
-console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
-console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+return totalProducts > containerSize;
